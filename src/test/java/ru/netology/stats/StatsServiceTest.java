@@ -26,15 +26,15 @@ public class StatsServiceTest {
         Assertions.assertEquals(expectedDay, actualDay);
     }
 
-@Test
+    @Test
     public void maxSales() {
-    StatsService service = new StatsService();
-    long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-    long expectedDay = 8;
-    long actualDay = service.maxSales(sales);
+        StatsService service = new StatsService();
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long expectedDay = 8;
+        long actualDay = service.maxSales(sales);
 
-    Assertions.assertEquals(expectedDay, actualDay);
-}
+        Assertions.assertEquals(expectedDay, actualDay);
+    }
 
     @Test
     public void minSales() {
